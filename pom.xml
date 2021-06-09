@@ -10,8 +10,8 @@
 
 
     <modules>
-        <module>clusterlock-spring-boot-stater</module>
         <module>clusterlock-spring-boot-autoconfigure</module>
+        <module>clusterlock-spring-boot-stater</module>
         <module>clusterlock-spring-boot-test</module>
     </modules>
 
