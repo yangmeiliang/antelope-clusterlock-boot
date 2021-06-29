@@ -16,12 +16,13 @@ public class TestController {
     @ClusterLock(value = "#id")
     @GetMapping("/redis/lock/test01")
     public void test01(String id) {
+        long start = System.currentTimeMillis();
         try {
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("####################test01");
+        System.out.println("####################test01, 耗时：" + (System.currentTimeMillis() - start)/1000);
     }
 
     @ClusterLock(value = "#id", waitTime = 5000)
