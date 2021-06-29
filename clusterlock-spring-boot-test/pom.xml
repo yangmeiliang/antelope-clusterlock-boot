@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.antelope</groupId>
             <artifactId>clusterlock-spring-boot-stater</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${parent.version}</version>
         </dependency>
 
     </dependencies>
